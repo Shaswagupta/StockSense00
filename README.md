@@ -1,5 +1,5 @@
 # StockSense — Inventory Management System (IMS)
-Deployed link: ("https://stock-sense00-9vwu8c14j-shaswagupta.vercel.app/dashboard")
+Deployed link: ("https://stock-sense00-git-ankit-frontend-shaswagupta.vercel.app?_vercel_share=gTCvxShgzQemHHXt5io06rkGlWfQQQRn")
 
 A modular Inventory Management System built for the **Odoo Hackathon**, designed to digitize and streamline stock-related operations for a business — replacing manual registers, Excel sheets, and scattered tracking with a centralized, real-time, easy-to-use app.
 
