@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stocksense-intelligence"
+version = "0.1.0"
+description = "Inventory intelligence engine for StockSense"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic",
+    "pandas",
+    "numpy",
+    "python-dotenv",
+    "pytest",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

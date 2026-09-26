@@ -1,0 +1,14 @@
+pyproject.toml
+src/stocksense_intelligence/__init__.py
+src/stocksense_intelligence.egg-info/PKG-INFO
+src/stocksense_intelligence.egg-info/SOURCES.txt
+src/stocksense_intelligence.egg-info/dependency_links.txt
+src/stocksense_intelligence.egg-info/requires.txt
+src/stocksense_intelligence.egg-info/top_level.txt
+src/stocksense_intelligence/contracts/__init__.py
+src/stocksense_intelligence/contracts/inventory_event.py
+src/stocksense_intelligence/contracts/product.py
+src/stocksense_intelligence/contracts/stock_snapshot.py
+src/stocksense_intelligence/ingestion/__init__.py
+src/stocksense_intelligence/ingestion/validator.py
+tests/test_contracts.py
