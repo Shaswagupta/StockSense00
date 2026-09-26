@@ -1,7 +1,8 @@
 from fastapi import Depends, FastAPI
 from sqlalchemy import text
 from sqlalchemy.orm import Session
-
+from app.api.inventory import router as inventory_router
+from app.api.stock import router as stock_router
 from app.core.database import get_db
 
 
@@ -10,7 +11,8 @@ app = FastAPI(
     description="Inventory Operations and Intelligence Platform",
     version="0.1.0",
 )
-
+app.include_router(inventory_router)
+app.include_router(stock_router)
 
 @app.get("/")
 def root():
