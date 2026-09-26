@@ -3,6 +3,7 @@ from sqlalchemy import text
 from sqlalchemy.orm import Session
 from app.api.inventory import router as inventory_router
 from app.api.stock import router as stock_router
+from app.api.intelligence import router as intelligence_router
 from app.core.database import get_db
 
 
@@ -12,6 +13,7 @@ app = FastAPI(
     version="0.1.0",
 )
 app.include_router(inventory_router)
+app.include_router(intelligence_router)
 app.include_router(stock_router)
 
 @app.get("/")
