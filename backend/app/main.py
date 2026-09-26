@@ -1,4 +1,9 @@
-from fastapi import FastAPI
+from fastapi import Depends, FastAPI
+from sqlalchemy import text
+from sqlalchemy.orm import Session
+
+from app.core.database import get_db
+
 
 app = FastAPI(
     title="StockSense API",
@@ -20,4 +25,15 @@ def health_check():
     return {
         "status": "healthy",
         "service": "stocksense-api",
+    }
+
+
+@app.get("/health/db")
+def database_health(db: Session = Depends(get_db)):
+    result = db.execute(text("SELECT current_database()"))
+    database_name = result.scalar_one()
+
+    return {
+        "status": "healthy",
+        "database": database_name,
     }
